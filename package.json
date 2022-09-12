@@ -1,5 +1,5 @@
 {
-  "name": "ultra-json-stable-stringify",
+  "name": "extra-json-stable-stringify",
   "version": "0.1.0",
   "description": "",
   "keywords": [],
@@ -10,7 +10,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "sideEffects": false,
-  "repository": "git@github.com:BlackGlory/ultra-json-stable-stringify.git",
+  "repository": "git@github.com:BlackGlory/extra-json-stable-stringify.git",
   "author": "BlackGlory <woshenmedoubuzhidao@blackglory.me>",
   "license": "MIT",
   "scripts": {

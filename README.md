@@ -1,9 +1,9 @@
-# ultra-json-stable-stringify
+# extra-json-stable-stringify
 ## Install
 ```sh
-npm install --save ultra-json-stable-stringify
+npm install --save extra-json-stable-stringify
 # or
-yarn add ultra-json-stable-stringify
+yarn add extra-json-stable-stringify
 ```
 
 ## API
