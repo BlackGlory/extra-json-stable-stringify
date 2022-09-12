@@ -4,7 +4,8 @@ import { readJSONFileSync } from 'extra-filesystem'
 import path from 'path'
 import fastJSONStableStringify from 'fast-json-stable-stringify'
 import fastStableStringify from 'fast-stable-stringify'
-import { stringify } from '..'
+import { isObject, isntArray } from '@blackglory/prelude'
+import { compareStringsAscending } from 'extra-sort'
 import * as WASM from '../wasm/lib/nodejs'
 
 const sample = readJSONFileSync(path.join(__dirname, 'sample.json'))
@@ -32,9 +33,23 @@ benchmark.addCase('fast-stable-stringify', () => {
   }
 })
 
-benchmark.addCase('ultra-json-stable-stringify', () => {
+benchmark.addCase('simple implementation', () => {
   return () => {
     stringify(sample)
+  }
+
+  function stringify(value: any): string {
+    return JSON.stringify(value, (_, value) => {
+      if (isObject(value) && isntArray(value)) {
+        return Object.fromEntries(
+          Object
+            .entries(value)
+            .sort(([keyA], [keyB]) => compareStringsAscending(keyA, keyB))
+        )
+      } else {
+        return value
+      }
+    })
   }
 })
 

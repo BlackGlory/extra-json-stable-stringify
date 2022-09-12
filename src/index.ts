@@ -1,1 +1,1 @@
-export * from './stringify'
+export { stringify } from './stringify'

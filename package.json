@@ -22,7 +22,7 @@
     "clean": "run-p clean:*",
     "clean:build": "rimraf lib",
     "clean:bundle": "rimraf dist",
-    "clean:wasm": "rimraf wasm/lib",
+    "unused:clean:wasm": "rimraf wasm/lib",
     "build": "run-p build:*",
     "build:compile": "tsc --project tsconfig.build.json --module commonjs",
     "build:patch": "tscpaths -p tsconfig.build.json -s ./src -o ./lib",
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@blackglory/jest-matchers": "^0.3.1",
+    "@blackglory/prelude": "^0.1.4",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@rollup/plugin-commonjs": "^22.0.2",
@@ -55,8 +56,8 @@
     "eslint": "^8.22.0",
     "extra-benchmark": "^0.1.0",
     "extra-filesystem": "^0.4.5",
+    "extra-sort": "^0.1.1",
     "fast-json-stable-stringify": "^2.1.0",
-    "fast-stable-stringify": "^1.0.0",
     "husky": "^4.3.8",
     "jest": "^27.5.1",
     "npm-run-all": "^4.1.5",
@@ -71,7 +72,6 @@
     "typescript": "^4.8.2"
   },
   "dependencies": {
-    "@blackglory/prelude": "^0.1.4",
-    "extra-sort": "^0.1.1"
+    "fast-stable-stringify": "^1.0.0"
   }
 }
