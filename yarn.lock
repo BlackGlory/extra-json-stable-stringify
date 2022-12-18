@@ -306,18 +306,6 @@
     extra-timers "^0.2.5"
     justypes "^2.0.0"
 
-"@blackglory/jest-matchers@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@blackglory/jest-matchers/-/jest-matchers-0.3.1.tgz#07577b07ec670bd55f14c3778a4bcc88b5fa37b3"
-  integrity sha512-Y1p6nbeIu7XwLU+AqE5yLaey/HHm0Y4D+toNdx68iec5/Z4uMXC2J52V+wqCkx6llTXwKM7uQYCKfx+8PSuPtQ==
-  dependencies:
-    "@blackglory/go" "^1.0.0"
-    "@blackglory/types" "^1.0.0"
-    "@types/node" "14"
-    extra-filesystem "^0.4.2"
-    extra-stream "^0.1.3"
-    jest-diff "^27.5.1"
-
 "@blackglory/log@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@blackglory/log/-/log-1.2.0.tgz#779788b859675d2c46f8f183cf52ab21d5d83a8f"
@@ -370,15 +358,7 @@
     justypes "^2.1.0"
     rxjs "^7.5.5"
 
-"@blackglory/types@^0.6.4":
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-0.6.5.tgz#5f01c142ce4a98ff32f5b6fd7ea396f6e0132fea"
-  integrity sha512-5TXyKE8MPlI2dXpGvomeLuMK9DD/RO2WxVzHJMQ0RxVK0FtF9Y8ceGi1QsDFATI9yPL+l34ifoD9Crj4AYvnHw==
-  dependencies:
-    justypes "^0.1.6"
-    lodash.isplainobject "^4.0.6"
-
-"@blackglory/types@^1.0.0", "@blackglory/types@^1.1.0", "@blackglory/types@^1.2.1":
+"@blackglory/types@^1.1.0", "@blackglory/types@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-1.2.1.tgz#7047127bc35e1fcdaeaed392b5cfaca9076e5c5a"
   integrity sha512-+31NsGumAkAdG5LGh5JQqthXKauQ4+kMgTOvQVMCbQfhH2CQPY6bkrmMTVG25SoCHQZaTZ7XFJNXIxFOPLZHXg==
@@ -1068,11 +1048,6 @@
   version "18.7.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.6.tgz#31743bc5772b6ac223845e18c3fc26f042713c83"
   integrity sha512-EdxgKRXgYsNITy5mjjXjVE/CS8YENSdhiagGrLqjG0pvA2owgJ6i4l7wy/PFZGC0B1/H20lWKN7ONVDNYDZm7A==
-
-"@types/node@14":
-  version "14.18.24"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.24.tgz#406b220dc748947e1959d8a38a75979e87166704"
-  integrity sha512-aJdn8XErcSrfr7k8ZDDfU6/2OgjZcB2Fu9d+ESK8D7Oa5mtsv8Fa8GpcwTA0v60kuZBaalKPzuzun4Ov1YWO/w==
 
 "@types/node@^18.7.13":
   version "18.7.13"
@@ -2469,7 +2444,7 @@ extra-benchmark@^0.1.0:
   dependencies:
     "@blackglory/prelude" "^0.1.4"
 
-extra-filesystem@^0.4.2, extra-filesystem@^0.4.5:
+extra-filesystem@^0.4.5:
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/extra-filesystem/-/extra-filesystem-0.4.5.tgz#179c74b72cf3a964d926007cf1ed094550b7d10f"
   integrity sha512-5XYNFqgDBVNI+e95hO1CPki8qD94gJHATEuE5AVYulRRauXAQcj37w3MoiHkTAkxZdDRHBQMJcGvL1NnfAWSCQ==
@@ -2519,13 +2494,6 @@ extra-sort@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/extra-sort/-/extra-sort-0.1.1.tgz#b2ff7295ea252344baa2ce916c75e717cc1a9217"
   integrity sha512-shazpfR2gVn3g1LNHDRWEoJwN5V64XdWpmZK2OvI7hLfH4aHeXqglitr8EW6saQG8ZevuynK2kEwyJqlpVDPeQ==
-
-extra-stream@^0.1.3:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/extra-stream/-/extra-stream-0.1.5.tgz#d214b8cde97b7d7087c311d09af2b5c6a8eaf740"
-  integrity sha512-4Id7489hsrjr6uyQEO8BIbbA2igkQgsy5g0edKPlDDw71S+LkMVvN+RmOfo9e8JtE5seo+aCkXU0fYmIAlBBIQ==
-  dependencies:
-    "@blackglory/types" "^0.6.4"
 
 extra-timers@^0.2.5:
   version "0.2.5"
@@ -3997,11 +3965,6 @@ jsonparse@^1.2.0:
   resolved "https://registry.yarnpkg.com/jsonparse/-/jsonparse-1.3.1.tgz#3f4dae4a91fac315f71062f8521cc239f1366280"
   integrity sha512-POQXvpdL69+CluYsillJ7SUhKvytYjW9vG/GKpnf+xP8UWgYEM/RaMzHHofbALDiKbbP1W8UEYmgGl39WkPZsg==
 
-justypes@^0.1.6:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/justypes/-/justypes-0.1.7.tgz#89d297b8dc06203c377ddab608bab5b8b164b0f1"
-  integrity sha512-QKQRQixokHYVXtWc04U1R4h+Y5Wg32ZubhjJYEo7Tu32l5J93xHbD8vhR/G7G/k8wPo9tw6NVDEiW2QYMeh7ug==
-
 justypes@^2.0.0, justypes@^2.0.1, justypes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/justypes/-/justypes-2.1.0.tgz#fe2da1b88e47f128827fc1e6339b2534f1e101c3"
@@ -4111,11 +4074,6 @@ lodash.ismatch@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.ismatch/-/lodash.ismatch-4.4.0.tgz#756cb5150ca3ba6f11085a78849645f188f85f37"
   integrity sha512-fPMfXjGQEV9Xsq/8MTSgUf255gawYRbjwMyDbcvDhXgV7enSZA0hynz6vMPnpAb5iONEzBHBPsT+0zes5Z301g==
-
-lodash.isplainobject@^4.0.6:
-  version "4.0.6"
-  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
-  integrity sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==
 
 lodash.memoize@4.x:
   version "4.1.2"

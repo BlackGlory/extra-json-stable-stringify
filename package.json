@@ -36,7 +36,6 @@
     }
   },
   "devDependencies": {
-    "@blackglory/jest-matchers": "^0.3.1",
     "@blackglory/prelude": "^0.1.4",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
