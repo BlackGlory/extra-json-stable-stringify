@@ -3,7 +3,10 @@
   "version": "0.1.1",
   "description": "",
   "keywords": [],
-  "files": ["lib"],
+  "files": [
+    "lib",
+    "src"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "sideEffects": false,
