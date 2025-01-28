@@ -10,6 +10,11 @@
   , "paths": {
       "@src/*": ["src/*"]
     , "@test/*": ["__tests__/*"]
+    , "@wasm/*": ["wasm/*"]
     }
+  , "plugins": [
+      { "transform": "typescript-transform-paths" }
+    , { "transform": "typescript-transform-paths", "afterDeclarations": true }
+    ]
   }
 }
