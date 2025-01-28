@@ -20,13 +20,8 @@
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "test:coverage": "jest --coverage --config jest.config.js",
     "prepublishOnly": "run-s prepare clean build",
-    "clean": "run-p clean:*",
-    "clean:js": "rimraf lib",
-    "clean:wasm": "rimraf wasm/lib",
+    "clean": "rimraf lib",
     "build": "tsc --project tsconfig.build.json",
-    "build:wasm": "run-p build:wasm:*",
-    "build:wasm:nodejs": "wasm-pack build --release --target nodejs --out-dir lib/nodejs wasm",
-    "build:wasm:web": "wasm-pack build --release --target bundler --out-dir lib/web wasm",
     "bench": "tsx benches/index.ts",
     "release": "standard-version"
   },
@@ -59,8 +54,7 @@
     "tslib": "^2.3.1",
     "tsx": "^4.19.2",
     "typescript": "^4.8.2",
-    "typescript-transform-paths": "^3.5.3",
-    "wasm-pack": "^0.13.1"
+    "typescript-transform-paths": "^3.5.3"
   },
   "dependencies": {
     "fast-stable-stringify": "^1.0.0"
